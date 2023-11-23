@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form表單</title>
+</head>
+
+<body>
+  <form action="index.php" method="post">
+    <label for="name">姓名</label>
+    <input type="text" id="name" name="name"><br>
+
+    <label>性別</label>
+    <input type="radio" id="sex1" name="sex" value="男">
+    <label for="sex1">男</label>
+    <input type="radio" id="sex2" name="sex" value="女">
+    <label for="sex2">女</label>
+    <br>
+    <label for="birthday">生日</label>
+    <input type="date" id="birthday" name="birthday"><br>
+
+
+    <label>興趣</label>
+    <input type="checkbox" id="interest1" name="interest[]" value="打球">
+    <label for="interest1">打球</label>
+    <input type="checkbox" id="interest2" name="interest[]" value="聽音樂">
+    <label for="interest2">聽音樂</label>
+    <input type="checkbox" id="interest3" name="interest[]" value="閱讀">
+    <label for="interest3">閱讀</label>
+    <input type="checkbox" id="interest4" name="interest[]" value="游泳">
+    <label for="interest4">游泳</label>
+    <br>
+    <button type="submit">提交</button>
+    <button type="reset">重設</button>
+  </form>
+</body>
+
+</html>
