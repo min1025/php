@@ -17,7 +17,7 @@ while ($row = $result->fetch_array()) {
       <td>{$row['personID']}</td>
       <td>{$row['FirstName']}</td>
       <td>{$row['Age']}</td>
-      <th><a href=\"update.php?personID={$row['personID']}\">UPDATE</a></th>
+      <th><a href=\"update.php?personID={$row['personID']}&FirstName={$row['FirstName']}&LastName={$row['LastName']}&Age={$row['Age']}\">UPDATE</a></th>
       <th><a href=\"delete.php?personID={$row['personID']}\">DELETE</a></th>
     </tr>";
 }
